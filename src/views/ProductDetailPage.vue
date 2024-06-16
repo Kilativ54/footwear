@@ -12,7 +12,7 @@ export default {
  #page-wrap {
     margin-top: 16px;
     padding: 16px;
-    max-width: 600px;
+    max-width: 800px;
   }
 
   #img-wrap {

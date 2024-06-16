@@ -1,7 +1,7 @@
 <template>
   <div id="page-wrap">
     <div class="grid-wrap">
-      <div v-for="product in products" class="=product-item" v-bind:key="product.id">
+      <div v-for="product in products" class="product-item" v-bind:key="product.id">
         <img v-bind:src="product.imageUrl">
         <h3 class="product-name">{{ product.name }}</h3>
         <p class="product-price">${{ product.price }} </p>
@@ -34,15 +34,15 @@ export default {
 }
 
 .product-item {
-  align-items: center;
-  border-radius: 8px;
-  box-shadow: 0px 2px 5px #888;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2%;
-  padding: 20px;
-  position: relative;
-  width: 32%;
+   align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px #888;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+    padding: 20px;
+    position: relative;
+    width: 32%;
 }
 
 .product-name {
