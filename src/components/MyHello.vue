@@ -3,7 +3,6 @@
 
 <template>
   <p class="text">Component</p>
-  <button>Open</button>
 </template>
 
 <style scoped>

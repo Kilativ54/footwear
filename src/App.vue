@@ -1,65 +1,34 @@
-<script setup>
-import MyHello from './components/MyHello.vue'
-import { useRouter } from 'vue-router'
-</script>
-
 <template>
-  <div >
-    <header>
-      <!-- <nav class="nav">
-        <ul class="nav-list">
-          <li><router-link to="/products">products</router-link></li>
-          <li><router-link to="/products/123">products123</router-link></li>
-          <li><router-link to="/cart">cart</router-link></li>
-        </ul>
-      </nav> -->
-    </header>
-    
-    <main>
-      <router-view></router-view>
-    </main>
-    
-    <footer>
-      <div class="footer-content">
-        <h1>Vitalii</h1>
-        <h2>R, V, A</h2>
-        <MyHello />
-      </div>
-    </footer>
+  <div id="app">
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view/>
   </div>
 </template>
 
-<style scoped>
-.app-container {
-  padding: 20px;
-}
+<style>
+  * {
+    box-sizing: border-box;
+    font-family: Arial;
+  }
 
-.nav {
-  margin-bottom: 20px;
-}
+  #page-wrap {
+    margin: auto;
+    max-width: 800px;
+    min-height: 100vh;
+  }
 
-.nav-list {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-  padding: 0;
-}
-
-.nav-list li {
-  display: inline;
-}
-
-.nav-list a {
-  text-decoration: none;
-  color: #007bff;
-}
-
-.nav-list a.router-link-exact-active {
-  font-weight: bold;
-}
-
-.footer-content {
-  margin-top: 50px;
-  text-align: center;
-}
+  button {
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    outline: 0;
+    padding: 16px;
+  }
 </style>
