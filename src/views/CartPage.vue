@@ -33,7 +33,7 @@ export default {
 
 <style>
 h1 {
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   margin: 0;
   margin-top: 16px;
   padding: 16px;
